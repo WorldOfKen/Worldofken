@@ -1,0 +1,54 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodywrap{
+    background-color: whitesmoke;
+}
+#header{
+    display:block;
+    height: 100px;
+    background-color: turquoise;
+    width: 100%;
+    overflow: hidden;
+}
+#navbar{
+    justify-self: flex-start;
+    display: flex;
+    position: static;
+    margin-bottom: 10px;   
+    float: left;
+}
+#navbar ul{
+    position: relative;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 10px;
+    left: 100px;
+}
+#navbar li{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.logocontainer{float:right ;
+    background-color: tomato;
+    height: 100%;
+    max-width: auto;
+    margin: auto;
+    justify-self: right;
+}
+.logocontainer::after{
+    clear: both;
+}
+#header-image{
+    display: flex;
+    max-width: auto;
+    max-height: 100%;
+    
+}
