@@ -10,45 +10,57 @@
 .bodywrap{
     background-color: whitesmoke;
 }
-#header{
-    display:block;
-    height: 100px;
-    background-color: turquoise;
+header{
+    position: fixed;
     width: 100%;
-    overflow: hidden;
-}
-#navbar{
-    justify-self: flex-start;
+    top: 0;
+    min-height: 75px;
+    max-height: 120px;
     display: flex;
-    position: static;
-    margin-bottom: 10px;   
-    float: left;
+    align-items: center;
+    background-color: #eee;
+    justify-content: space-between;
+    margin-bottom: 75px;
 }
-#navbar ul{
-    position: relative;
-    display: inline-flex;
+#nav-bar{
+  display: block;
+}
+#nav-bar ul{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    padding: 10px;
-    left: 100px;
 }
-#navbar li{
-    margin: 10px;
+
+#nav-bar li{   
+    padding: 10px; 
+    margin:0px 10px;
     font-size: 20px;
 }
 
-.logocontainer{float:right ;
-    background-color: tomato;
-    height: 100%;
-    max-width: auto;
-    margin: auto;
-    justify-self: right;
-}
-.logocontainer::after{
-    clear: both;
+.logo-container{
+    width: 100%;
 }
 #header-image{
+    max-height: 60px;
+    max-width: 60px;
     display: flex;
-    max-width: auto;
-    max-height: 100%;
-    
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#hero{
+    margin-top: 75px;
+}
+
+#video{
+}
+
+@media (max-width:600px) {
+    header{
+        flex-direction: column;
+    }
+    #hero{
+        margin-top: 102px;
+    }
 }
