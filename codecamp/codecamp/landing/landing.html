@@ -8,27 +8,69 @@
     <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    <div class="bodywrap">
+    <div id="bodywrap">
+        <a  id="top"></a>
         <header id="header">
-            <nav id="nav-bar"><!-- will stack in column if width under 600px -->
+            <!-- will stack in column if width under 600px -->
+            <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" alt="Company logo"  id="header-img">
+            <nav id="nav-bar">
                 <ul>
-                    <li class="navli"><a href="#" class="navlink">Home</a></li>
-                    <li class="navli"><a href="#" class="navlink">Products</a></li>
-                    <li class="navli"><a href="#" class="navlink">links</a></li>
+                    <li class="nav-links"><a href="#hero" class="nav-link">Home</a></li>
+                    <li class="nav-links"><a href="#form" class="nav-link">Sign Up</a></li>
+                    <li class="nav-links"><a href="#three-cards" class="nav-link">Packages</a></li>
                 </ul>
             </nav>
-            <div class="logo-container">
-            <img src="https://s3.amazonaws.com/freecodecamp/camper-image-placeholder.png" alt="Company logo"  id="header-image"></div>
         </header>
         <section id="hero">
-            <div id="video">
-                <h1>boop</h1>
+            
+            <section class="video" id="video-section">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/916GWv2Qs08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+                </div>
             </div>
-            <div id="form">
-                <form action="https://www.freecodecamp.com/email-submit">
-                <input type="email" name="email" id="email-input" placeholder="Enter email" required>
-                <input type="submit" value="Submit to your overlords">
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <h1>Sign up to learn more about html!</h1>
+                    <ul><!-- email input -->
+                        <li class="form-rows"><label for="email">Please enter email:</label><input type="email" name="email" id="email" placeholder="Email..." required></li>
+                        <!-- name input -->
+                        <li class="form-rows"><label for="">Please enter your name:</label><input type="name" name="name" id="name-input" required placeholder="Name..."></li>
+                        <!-- select input -->
+                        <li class="form-rows"><label for="experience">How much experience with programming do you have?</label><select name="experience" id="experience-input">
+                            <option value="0 years">0 years</option>
+                            <option value="1-2 years">1-2 years</option>
+                            <option value="3-7 years">3-7 years</option>
+                            <option value="7+ years">7+ years</option>
+                            </select></option></li>
+                        <!-- -->
+                        <input type="submit" value="Do you submit to the cat overlords?" class="submit-to-cats" id="submit">
+                    </ul>
                 </form>
+            </div>
+            <div class="h2">
+                <h2>Choose from our packages below!</h2>
+            </div>
+            <section id="three-cards">
+                <div class="card">
+                    <h2 class="card-item">Basic Course</h2>
+                    <h3 class="card-item">HTML basics</h3>
+                    <h3 class="card-item">Responsive design</h3>
+                    <h3 class="card-item">Accessibility design</h3>
+                    <a href="#" class="btn">£75</a>
+                </div>
+                <div class="card">
+                    <h2 class="card-item">HTML & CSS</h2>
+                    <h3 class="card-item">Everything from the Basic Course</h3>
+                    <h3 class="card-item">Mobile first design</h3>
+                    <h3 class="card-item">CSS Flexbox and Grid</h3>
+                    <a href="#" class="btn">£200</a>
+                </div>
+                <div class="card">
+                    <h2 class="card-item">THE WORKS</h2>
+                    <h3 class="card-item">Everything from the other packages</h3>
+                    <h3 class="card-item">Javascript</h3>
+                    <h3 class="card-item">Bootstrap</h3>
+                    <a href="#" class="btn">£300</a>
+                </div>
             </div>
 
         </main>
